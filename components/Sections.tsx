@@ -10,7 +10,7 @@ const patient = "https://images.unsplash.com/photo-1580489944761-15a19d654956?au
 const dentist = "/assets/dr-sher.png";
 
 export function AboutServices() { return <div className="pair pair-about">
-  <ToothSection id="about"><div className="copy"><Eyebrow>About the Dentist</Eyebrow><h2>Care. Precision.<br />Beautiful Smiles.</h2><p>Dr. Sher combines advanced technology with a gentle touch to deliver exceptional dental care for the whole family.</p></div><div className="portrait"><Image src={dentist} alt="Dr. Sher, lead dentist" fill sizes="(max-width: 800px) 100vw, 45vw" /></div><div className="pmdc-chip"><BadgeCheck aria-hidden="true"/><span>PMDC Reg. No. 809450-01-D</span></div><div className="experience"><strong>4+</strong><span>Years<br />Experience</span></div></ToothSection>
+  <ToothSection id="about"><div className="copy"><Eyebrow>About the Dentist</Eyebrow><h2>Care. Precision.<br />Beautiful Smiles.</h2><p>Dr. Sher combines advanced technology with a gentle touch to deliver exceptional dental care for the whole family.</p><div className="pmdc-chip"><BadgeCheck aria-hidden="true"/><span>PMDC Reg. No. 809450-01-D</span></div></div><div className="portrait"><Image src={dentist} alt="Dr. Sher, lead dentist" fill sizes="(max-width: 800px) 100vw, 45vw" /></div><div className="experience"><strong>4+</strong><span>Years<br />Experience</span></div></ToothSection>
   <ToothSection variant="services" id="services"><Eyebrow>Our Services</Eyebrow><h2>Comprehensive Care<br />for Every Smile</h2><div className="service-grid">{services.map(({ title, image }) => <article className="service-card" key={title}><div className="service-icon"><Image src={image} alt="" fill sizes="108px" /></div><b>{title}</b></article>)}</div></ToothSection>
   </div>; }
 
